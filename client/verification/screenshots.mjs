@@ -31,8 +31,18 @@ try {
       for (const [path, name] of [['/', 'dashboard'], ['/leads', 'leads'], ['/follow-ups', 'follow-ups'], ['/calls', 'calls'], ...(role === 'admin' ? [['/reports', 'reports']] : [])]) {
         await page.goto(`${base}${path}`); await page.waitForLoadState('networkidle'); await capture(`${role}-${name}`);
         if (path === '/leads') {
-          const leadLink = page.locator('tbody a').first();
-          if (await leadLink.count()) { await leadLink.click(); await page.waitForLoadState('networkidle'); await capture(`${role}-lead-detail`); }
+          // Prefer a seeded lead that has call history and follow-ups; fall back to the first row.
+          const named = page.locator('tbody a', { hasText: role === 'admin' ? 'Diya Reddy' : 'Aarav Sharma' });
+          const leadLink = (await named.count()) ? named.first() : page.locator('tbody a').first();
+          if (await leadLink.count()) {
+            await leadLink.click();
+            // Wait for the detail content itself, not just network idle, so we never capture the loading state.
+            await page.getByRole('heading', { name: 'Customer information' }).waitFor({ timeout: 15000 });
+            await page.getByRole('heading', { name: /Call history/ }).waitFor({ timeout: 15000 });
+            await page.getByText('Loading…').first().waitFor({ state: 'detached', timeout: 15000 }).catch(() => {});
+            await page.waitForLoadState('networkidle');
+            await capture(`${role}-lead-detail`);
+          }
         }
       }
       await page.setViewportSize({ width: 390, height: 844 });
