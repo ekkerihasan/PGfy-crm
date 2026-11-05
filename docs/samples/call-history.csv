@@ -1,0 +1,43 @@
+﻿Call ID,Called At (IST),Lead ID,Customer Name,Mobile,Called By,Current Assignee,Outcome,Connected,Duration (sec),Notes,Next Follow-up (IST),Lead Status
+cmw3q24fy003gvp60qsdv4q09,2026-11-04 18:40,cmw3q24ef003cvp6084r704eo,Meera Krishnan,7406012316,Sneha Iyer,Sneha Iyer,INTERESTED,Yes,180,"Interested, asked about food and Wi-Fi inclusions.",2026-11-08 11:00,INTERESTED
+cmw3q249g0028vp60k8bpcyn3,2026-11-04 10:40,cmw3q248y0024vp6057p1t1rf,Advik Rao,8970567811,Rahul Kumar,Rahul Kumar,NOT_ANSWERED,No,0,No answer. Will try again.,2026-11-05 17:00,CONTACTED
+cmw3q24hg003wvp60owdppwhe,2026-11-04 02:40,cmw3q24h5003svp60eqdpsv15,Siddharth Rao,9164345619,Sneha Iyer,Sneha Iyer,CALL_BACK_REQUESTED,Yes,420,Asked to call back in the evening.,2026-11-05 17:00,CONTACTED
+cmw3q2486001wvp60rynke2da,2026-11-04 02:40,cmw3q247q001svp60jcow8657,Saanvi Kulkarni,9880234508,Rahul Kumar,Rahul Kumar,INTERESTED,Yes,310,"Interested, asked about food and Wi-Fi inclusions.",2026-11-08 11:00,INTERESTED
+cmw3q24dh0038vp60ao672kzp,2026-11-04 00:35,cmw3q24cv0032vp604a3jqiqv,Aditya Shetty,9986901215,Sneha Iyer,Sneha Iyer,NOT_ANSWERED,No,0,No answer. Will try again.,2026-11-03 11:00,CONTACTED
+cmw3q24f7003evp60gev2tlh2,2026-11-03 19:00,cmw3q24ef003cvp6084r704eo,Meera Krishnan,7406012316,Sneha Iyer,Sneha Iyer,CONNECTED,Yes,95,"Spoke briefly, shared property options on WhatsApp.",,INTERESTED
+cmw3q2467001gvp60myr2gz9k,2026-11-03 18:40,cmw3q245q001cvp60gb71b6ue,Ishita Gupta,9632145606,Rahul Kumar,Rahul Kumar,CALL_BACK_REQUESTED,Yes,180,Asked to call back in the evening.,2026-11-03 11:00,CONTACTED
+cmw3q24aa002ivp60t0zsmvdt,2026-11-03 18:35,cmw3q249s002cvp60942osk1m,Kiara Pillai,9535678912,Rahul Kumar,Rahul Kumar,INTERESTED,Yes,310,"Interested, asked about food and Wi-Fi inclusions.",2026-11-03 11:00,INTERESTED
+cmw3q24ca002yvp60w561zlw2,2026-11-03 06:35,cmw3q24bc002svp6076irn5uz,Tara Hegde,8762890114,Sneha Iyer,Sneha Iyer,VISIT_SCHEDULED,Yes,95,Site visit scheduled with the property manager.,2026-11-05 17:00,VISIT_SCHEDULED
+cmw3q24990026vp605vd3pwph,2026-11-03 03:00,cmw3q248y0024vp6057p1t1rf,Advik Rao,8970567811,Rahul Kumar,Rahul Kumar,SWITCHED_OFF,No,0,Phone switched off.,,CONTACTED
+cmw3q244l0012vp60ayjvyvwz,2026-11-03 00:35,cmw3q2442000wvp60jkjy3uc0,Ananya Iyer,9741234504,Rahul Kumar,Rahul Kumar,VISIT_SCHEDULED,Yes,95,Site visit scheduled with the property manager.,2026-11-08 11:00,VISIT_SCHEDULED
+cmw3q243o000svp60nbffy6bj,2026-11-02 18:40,cmw3q2433000ovp605tz39eg6,Vihaan Nair,8123456703,Rahul Kumar,Rahul Kumar,SWITCHED_OFF,No,0,Phone switched off.,2026-11-03 11:00,CONTACTED
+cmw3q24ie0046vp60dl793m73,2026-11-02 18:35,cmw3q24hr0040vp60g820z4r4,Lavanya Gowda,7899456720,Sneha Iyer,Sneha Iyer,CALL_BACK_REQUESTED,Yes,180,Asked to call back in the evening.,2026-11-04 15:00,INTERESTED
+cmw3q2480001uvp60irbv1cl3,2026-11-02 11:00,cmw3q247q001svp60jcow8657,Saanvi Kulkarni,9880234508,Rahul Kumar,Rahul Kumar,CONNECTED,Yes,240,"Spoke briefly, shared property options on WhatsApp.",,INTERESTED
+cmw3q24ha003uvp602rvqbaqw,2026-11-02 11:00,cmw3q24h5003svp60eqdpsv15,Siddharth Rao,9164345619,Sneha Iyer,Sneha Iyer,SWITCHED_OFF,No,0,Phone switched off.,,CONTACTED
+cmw3q24da0036vp60ieoaeuy0,2026-11-02 06:50,cmw3q24cv0032vp604a3jqiqv,Aditya Shetty,9986901215,Sneha Iyer,Sneha Iyer,BUSY,No,0,Line busy.,,CONTACTED
+cmw3q2418000avp607sk338m4,2026-11-02 06:35,cmw3q24070004vp60iimnisky,Aarav Sharma,9845012301,Rahul Kumar,Rahul Kumar,INTERESTED,Yes,240,"Interested, asked about food and Wi-Fi inclusions.",2026-11-05 17:00,INTERESTED
+cmw3q245z001evp60tg2qikb6,2026-11-01 19:00,cmw3q245q001cvp60gb71b6ue,Ishita Gupta,9632145606,Rahul Kumar,Rahul Kumar,NOT_ANSWERED,No,0,No answer. Will try again.,,CONTACTED
+cmw3q24a3002gvp6005pn366l,2026-11-01 18:50,cmw3q249s002cvp60942osk1m,Kiara Pillai,9535678912,Rahul Kumar,Rahul Kumar,CALL_BACK_REQUESTED,Yes,240,Asked to call back in the evening.,,INTERESTED
+cmw3q247f001qvp60r5l88uyy,2026-11-01 06:35,cmw3q246r001kvp608mfavsv5,Reyansh Joshi,8095123407,Rahul Kumar,Rahul Kumar,CONVERTED,Yes,310,"Booking confirmed, token amount paid.",,CONVERTED
+cmw3q24c0002wvp60h6hpfm88,2026-10-31 18:50,cmw3q24bc002svp6076irn5uz,Tara Hegde,8762890114,Sneha Iyer,Sneha Iyer,CONNECTED,Yes,420,"Spoke briefly, shared property options on WhatsApp.",,VISIT_SCHEDULED
+cmw3q242k000kvp60tvx7si6q,2026-10-31 18:35,cmw3q241u000evp601m2xypd9,Diya Reddy,9900123402,Rahul Kumar,Rahul Kumar,CONVERTED,Yes,310,"Booking confirmed, token amount paid.",2026-11-04 15:00,CONVERTED
+cmw3q24d10034vp601cat972z,2026-10-31 13:05,cmw3q24cv0032vp604a3jqiqv,Aditya Shetty,9986901215,Sneha Iyer,Sneha Iyer,NOT_ANSWERED,No,0,No answer. Will try again.,,CONTACTED
+cmw3q24gv003ovp60gocic330,2026-10-31 10:40,cmw3q24gj003kvp608qu7wk52,Nikhil Verma,9036123417,Sneha Iyer,Sneha Iyer,NOT_INTERESTED,Yes,240,"Found another place, not interested now.",,LOST
+cmw3q244e0010vp605z5uw9z9,2026-10-31 06:50,cmw3q2442000wvp60jkjy3uc0,Ananya Iyer,9741234504,Rahul Kumar,Rahul Kumar,CALL_BACK_REQUESTED,Yes,420,Asked to call back in the evening.,,VISIT_SCHEDULED
+cmw3q249x002evp60tv4jfnes,2026-10-30 19:05,cmw3q249s002cvp60942osk1m,Kiara Pillai,9535678912,Rahul Kumar,Rahul Kumar,CONNECTED,Yes,180,"Spoke briefly, shared property options on WhatsApp.",,INTERESTED
+cmw3q243d000qvp60342n8m4c,2026-10-30 19:00,cmw3q2433000ovp605tz39eg6,Vihaan Nair,8123456703,Rahul Kumar,Rahul Kumar,BUSY,No,0,Line busy.,,CONTACTED
+cmw3q24i70044vp60lsro6ufr,2026-10-30 18:50,cmw3q24hr0040vp60g820z4r4,Lavanya Gowda,7899456720,Sneha Iyer,Sneha Iyer,INTERESTED,Yes,95,"Interested, asked about food and Wi-Fi inclusions.",,INTERESTED
+cmw3q24100008vp60mp9oq19s,2026-10-29 18:50,cmw3q24070004vp60iimnisky,Aarav Sharma,9845012301,Rahul Kumar,Rahul Kumar,CONNECTED,Yes,180,"Spoke briefly, shared property options on WhatsApp.",,INTERESTED
+cmw3q24b4002qvp60ip44ugyu,2026-10-29 10:40,cmw3q24an002mvp60uypfi4dq,Rohan Bhat,9449789013,Sneha Iyer,Sneha Iyer,CONVERTED,Yes,310,"Booking confirmed, token amount paid.",,CONVERTED
+cmw3q24bo002uvp60funvp3oh,2026-10-29 07:05,cmw3q24bc002svp6076irn5uz,Tara Hegde,8762890114,Sneha Iyer,Sneha Iyer,BUSY,No,0,Line busy.,,VISIT_SCHEDULED
+cmw3q2448000yvp60zd9rgw4b,2026-10-28 13:05,cmw3q2442000wvp60jkjy3uc0,Ananya Iyer,9741234504,Rahul Kumar,Rahul Kumar,CONNECTED,Yes,310,"Spoke briefly, shared property options on WhatsApp.",,VISIT_SCHEDULED
+cmw3q245h001avp606mrpsx1r,2026-10-28 10:40,cmw3q24500016vp60wcvzhrh4,Kabir Malhotra,7022345605,Rahul Kumar,Rahul Kumar,NOT_INTERESTED,Yes,95,"Found another place, not interested now.",,LOST
+cmw3q24hy0042vp60nkayuzzu,2026-10-27 19:05,cmw3q24hr0040vp60g820z4r4,Lavanya Gowda,7899456720,Sneha Iyer,Sneha Iyer,CONNECTED,Yes,420,"Spoke briefly, shared property options on WhatsApp.",,INTERESTED
+cmw3q2476001ovp60byl15yry,2026-10-27 18:50,cmw3q246r001kvp608mfavsv5,Reyansh Joshi,8095123407,Rahul Kumar,Rahul Kumar,INTERESTED,Yes,240,"Interested, asked about food and Wi-Fi inclusions.",,CONVERTED
+cmw3q242b000ivp60az1n439b,2026-10-26 18:50,cmw3q241u000evp601m2xypd9,Diya Reddy,9900123402,Rahul Kumar,Rahul Kumar,VISIT_SCHEDULED,Yes,240,Site visit scheduled with the property manager.,,CONVERTED
+cmw3q240m0006vp60svn532jc,2026-10-26 07:05,cmw3q24070004vp60iimnisky,Aarav Sharma,9845012301,Rahul Kumar,Rahul Kumar,NOT_ANSWERED,No,0,No answer. Will try again.,,INTERESTED
+cmw3q24gp003mvp6005gpeniq,2026-10-26 03:00,cmw3q24gj003kvp608qu7wk52,Nikhil Verma,9036123417,Sneha Iyer,Sneha Iyer,CONNECTED,Yes,180,"Spoke briefly, shared property options on WhatsApp.",,LOST
+cmw3q246z001mvp60bvefxtzv,2026-10-23 07:05,cmw3q246r001kvp608mfavsv5,Reyansh Joshi,8095123407,Rahul Kumar,Rahul Kumar,CONNECTED,Yes,180,"Spoke briefly, shared property options on WhatsApp.",,CONVERTED
+cmw3q24at002ovp606phuwxg9,2026-10-22 03:00,cmw3q24an002mvp60uypfi4dq,Rohan Bhat,9449789013,Sneha Iyer,Sneha Iyer,CONNECTED,Yes,240,"Spoke briefly, shared property options on WhatsApp.",,CONVERTED
+cmw3q2422000gvp60qdroujgx,2026-10-21 19:05,cmw3q241u000evp601m2xypd9,Diya Reddy,9900123402,Rahul Kumar,Rahul Kumar,CONNECTED,Yes,180,"Spoke briefly, shared property options on WhatsApp.",,CONVERTED
+cmw3q24590018vp60pz6mvlju,2026-10-20 03:00,cmw3q24500016vp60wcvzhrh4,Kabir Malhotra,7022345605,Rahul Kumar,Rahul Kumar,CONNECTED,Yes,420,"Spoke briefly, shared property options on WhatsApp.",,LOST

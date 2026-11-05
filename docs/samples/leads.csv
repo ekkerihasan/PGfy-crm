@@ -1,0 +1,25 @@
+﻿Lead ID,Customer Name,Mobile,Email,Property Category,Preferred Location,Budget (INR),Lead Source,Status,Enquiry Date (IST),Assigned Executive,Executive Email,Total Calls,Last Call (IST),Last Call Outcome,Next Follow-up (IST),Pending Follow-ups
+cmw3q24iz004avp60j0frajh2,Harsh Patil,9741567821,harsh.patil@example.com,CO_LIVING,HSR Layout,15000,WEBSITE,NEW,2026-11-05 19:20,Unassigned,,0,,,,0
+cmw3q24jw004gvp601vsv1u3h,Zoya Khan,7338890124,zoya.khan@example.com,APARTMENT,Hennur,27000,REFERRAL,NEW,2026-11-05 19:20,Unassigned,,0,,,,0
+cmw3q24h0003qvp608m196rpb,Pooja Agarwal,8217234518,pooja.agarwal@example.com,PG,Rajajinagar,10500,WALK_IN,NEW,2026-11-04 19:20,Sneha Iyer,sales2@pgfy.demo,0,,,,0
+cmw3q24je004cvp6097olevj8,Nisha Fernandes,8050678922,nisha.fernandes@example.com,PG,Frazer Town,9000,SOCIAL_MEDIA,NEW,2026-11-04 19:20,Unassigned,,0,,,,0
+cmw3q248r0022vp60svf6om2j,Myra Desai,9611456710,myra.desai@example.com,APARTMENT,Hebbal,30000,PROPERTY_PORTAL,NEW,2026-11-04 19:20,Rahul Kumar,sales@pgfy.demo,0,,,,0
+cmw3q24jm004evp60e571xfbf,Yash Chawla,9900789023,yash.chawla@example.com,STUDIO,MG Road,32000,PROPERTY_PORTAL,NEW,2026-11-03 19:20,Unassigned,,0,,,,0
+cmw3q248k0020vp60zejvyqvh,Arjun Menon,7259345609,arjun.menon@example.com,HOSTEL,Yelahanka,7500,SOCIAL_MEDIA,NEW,2026-11-03 19:20,Rahul Kumar,sales@pgfy.demo,0,,,,0
+cmw3q24ef003cvp6084r704eo,Meera Krishnan,7406012316,meera.krishnan@example.com,CO_LIVING,Koramangala,19000,SOCIAL_MEDIA,INTERESTED,2026-11-02 19:20,Sneha Iyer,sales2@pgfy.demo,2,2026-11-04 18:40,INTERESTED,2026-11-08 11:00,1
+cmw3q248y0024vp6057p1t1rf,Advik Rao,8970567811,advik.rao@example.com,STUDIO,Bellandur,22000,WEBSITE,CONTACTED,2026-11-01 19:20,Rahul Kumar,sales@pgfy.demo,2,2026-11-04 10:40,NOT_ANSWERED,2026-11-05 17:00,1
+cmw3q247q001svp60jcow8657,Saanvi Kulkarni,9880234508,saanvi.kulkarni@example.com,PG,Jayanagar,11000,REFERRAL,INTERESTED,2026-10-31 19:20,Rahul Kumar,sales@pgfy.demo,2,2026-11-04 02:40,INTERESTED,2026-11-08 11:00,1
+cmw3q24h5003svp60eqdpsv15,Siddharth Rao,9164345619,siddharth.rao@example.com,APARTMENT,Whitefield,40000,REFERRAL,CONTACTED,2026-10-31 19:20,Sneha Iyer,sales2@pgfy.demo,2,2026-11-04 02:40,CALL_BACK_REQUESTED,2026-11-05 17:00,1
+cmw3q245q001cvp60gb71b6ue,Ishita Gupta,9632145606,ishita.gupta@example.com,PG,BTM Layout,10000,WEBSITE,CONTACTED,2026-10-30 19:20,Rahul Kumar,sales@pgfy.demo,2,2026-11-03 18:40,CALL_BACK_REQUESTED,2026-11-03 11:00,1
+cmw3q24cv0032vp604a3jqiqv,Aditya Shetty,9986901215,aditya.shetty@example.com,HOSTEL,Banashankari,7000,WEBSITE,CONTACTED,2026-10-29 19:20,Sneha Iyer,sales2@pgfy.demo,3,2026-11-04 00:35,NOT_ANSWERED,2026-11-03 11:00,1
+cmw3q249s002cvp60942osk1m,Kiara Pillai,9535678912,kiara.pillai@example.com,CO_LIVING,Sarjapur Road,17000,WALK_IN,INTERESTED,2026-10-28 19:20,Rahul Kumar,sales@pgfy.demo,3,2026-11-03 18:35,INTERESTED,2026-11-03 11:00,1
+cmw3q2433000ovp605tz39eg6,Vihaan Nair,8123456703,vihaan.nair@example.com,HOSTEL,Electronic City,8000,REFERRAL,CONTACTED,2026-10-27 19:20,Rahul Kumar,sales@pgfy.demo,2,2026-11-02 18:40,SWITCHED_OFF,2026-11-03 11:00,1
+cmw3q24bc002svp6076irn5uz,Tara Hegde,8762890114,tara.hegde@example.com,APARTMENT,JP Nagar,28000,REFERRAL,VISIT_SCHEDULED,2026-10-26 19:20,Sneha Iyer,sales2@pgfy.demo,3,2026-11-03 06:35,VISIT_SCHEDULED,2026-11-05 17:00,1
+cmw3q2442000wvp60jkjy3uc0,Ananya Iyer,9741234504,ananya.iyer@example.com,APARTMENT,Whitefield,35000,SOCIAL_MEDIA,VISIT_SCHEDULED,2026-10-25 19:20,Rahul Kumar,sales@pgfy.demo,3,2026-11-03 00:35,VISIT_SCHEDULED,2026-11-08 11:00,1
+cmw3q24hr0040vp60g820z4r4,Lavanya Gowda,7899456720,lavanya.gowda@example.com,HOSTEL,Electronic City,8500,PHONE,INTERESTED,2026-10-24 19:20,Sneha Iyer,sales2@pgfy.demo,3,2026-11-02 18:35,CALL_BACK_REQUESTED,,0
+cmw3q24070004vp60iimnisky,Aarav Sharma,9845012301,aarav.sharma@example.com,PG,Koramangala,12000,WEBSITE,INTERESTED,2026-10-22 19:20,Rahul Kumar,sales@pgfy.demo,3,2026-11-02 06:35,INTERESTED,2026-11-05 17:00,1
+cmw3q24gj003kvp608qu7wk52,Nikhil Verma,9036123417,nikhil.verma@example.com,STUDIO,Indiranagar,26000,PROPERTY_PORTAL,LOST,2026-10-20 19:20,Sneha Iyer,sales2@pgfy.demo,2,2026-10-31 10:40,NOT_INTERESTED,,0
+cmw3q246r001kvp608mfavsv5,Reyansh Joshi,8095123407,reyansh.joshi@example.com,CO_LIVING,Marathahalli,16000,PHONE,CONVERTED,2026-10-18 19:20,Rahul Kumar,sales@pgfy.demo,3,2026-11-01 06:35,CONVERTED,,0
+cmw3q241u000evp601m2xypd9,Diya Reddy,9900123402,diya.reddy@example.com,CO_LIVING,HSR Layout,18000,PROPERTY_PORTAL,CONVERTED,2026-10-16 19:20,Rahul Kumar,sales@pgfy.demo,3,2026-10-31 18:35,CONVERTED,,0
+cmw3q24an002mvp60uypfi4dq,Rohan Bhat,9449789013,rohan.bhat@example.com,PG,Malleshwaram,9500,PHONE,CONVERTED,2026-10-14 19:20,Sneha Iyer,sales2@pgfy.demo,2,2026-10-29 10:40,CONVERTED,,0
+cmw3q24500016vp60wcvzhrh4,Kabir Malhotra,7022345605,kabir.malhotra@example.com,STUDIO,Indiranagar,25000,WALK_IN,LOST,2026-10-11 19:20,Rahul Kumar,sales@pgfy.demo,2,2026-10-28 10:40,NOT_INTERESTED,,0
