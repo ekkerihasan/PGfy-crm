@@ -1,0 +1,127 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  SALES_EXECUTIVE
+}
+
+enum LeadStatus {
+  NEW
+  CONTACTED
+  INTERESTED
+  VISIT_SCHEDULED
+  CONVERTED
+  LOST
+}
+
+enum PropertyCategory {
+  PG
+  CO_LIVING
+  HOSTEL
+  APARTMENT
+  STUDIO
+}
+
+enum LeadSource {
+  WEBSITE
+  WALK_IN
+  REFERRAL
+  SOCIAL_MEDIA
+  PROPERTY_PORTAL
+  PHONE
+}
+
+enum CallOutcome {
+  CONNECTED
+  NOT_ANSWERED
+  BUSY
+  SWITCHED_OFF
+  INTERESTED
+  NOT_INTERESTED
+  CALL_BACK_REQUESTED
+  VISIT_SCHEDULED
+  CONVERTED
+}
+
+enum FollowUpStatus {
+  PENDING
+  COMPLETED
+  RESCHEDULED
+}
+
+model User {
+  id           String     @id @default(cuid())
+  name         String
+  email        String     @unique
+  passwordHash String
+  role         Role
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  leads        Lead[]
+  calls        Call[]
+  followUps    FollowUp[]
+}
+
+model Lead {
+  id                String           @id @default(cuid())
+  customerName      String
+  mobile            String
+  email             String?
+  propertyCategory  PropertyCategory
+  preferredLocation String
+  budget            Int // INR per month
+  leadSource        LeadSource
+  status            LeadStatus       @default(NEW)
+  enquiryDate       DateTime         @default(now())
+  assignedToId      String?
+  assignedTo        User?            @relation(fields: [assignedToId], references: [id], onDelete: SetNull)
+  createdAt         DateTime         @default(now())
+  updatedAt         DateTime         @updatedAt
+  calls             Call[]
+  followUps         FollowUp[]
+
+  @@index([assignedToId])
+  @@index([status])
+}
+
+// Append-only: calls are never updated or deleted by the API.
+model Call {
+  id              String      @id @default(cuid())
+  leadId          String
+  lead            Lead        @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  executiveId     String
+  executive       User        @relation(fields: [executiveId], references: [id])
+  calledAt        DateTime    @default(now())
+  durationSeconds Int
+  outcome         CallOutcome
+  notes           String?
+  nextFollowUpAt  DateTime?
+  createdAt       DateTime    @default(now())
+
+  @@index([leadId])
+  @@index([executiveId])
+}
+
+model FollowUp {
+  id          String         @id @default(cuid())
+  leadId      String
+  lead        Lead           @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  executiveId String
+  executive   User           @relation(fields: [executiveId], references: [id])
+  dueAt       DateTime
+  status      FollowUpStatus @default(PENDING)
+  notes       String?
+  completedAt DateTime?
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+
+  @@index([status, dueAt])
+  @@index([leadId])
+}
