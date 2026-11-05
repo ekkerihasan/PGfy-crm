@@ -11,11 +11,12 @@ export default function AssignForm({ lead, executives, onSaved, onCancel }: { le
     try { await api(`/api/leads/${lead.id}/assign`, { method: 'PATCH', body: { assignedToId: assignedToId || null } }); await onSaved(); }
     catch (e) { setError(errorMessage(e)); } finally { setBusy(false); }
   }
-  return <form className="space-y-4" onSubmit={submit}>
-    <p className="text-sm text-slate-600">Assign {lead.customerName} to a sales executive.</p>
+  return <form className="lead-editor" onSubmit={submit}>
+    <p className="lead-form-help">Assign {lead.customerName} to a sales executive.</p>
     {error && <ErrorState message={error} />}
     <Field label="Assigned executive"><Select value={assignedToId} onChange={e => setAssignedToId(e.target.value)}><option value="">Unassigned</option>{executives.map(e => <option key={e.id} value={e.id}>{e.name} ({e.email})</option>)}</Select></Field>
-    <div className="flex justify-end gap-2"><Button type="button" variant="secondary" disabled={busy} onClick={onCancel}>Cancel</Button><Button type="submit" disabled={busy}>{busy ? 'Saving…' : 'Save assignment'}</Button></div>
+    <div className="form-actions"><Button type="button" variant="secondary" disabled={busy} onClick={onCancel}>Cancel</Button><Button type="submit" disabled={busy}>{busy ? 'Saving…' : 'Save assignment'}</Button></div>
   </form>;
 }
+
 

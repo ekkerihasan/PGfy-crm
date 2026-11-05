@@ -13,7 +13,7 @@ async function login(role) {
   await page.goto(`${base}/login`);
   await page.getByLabel('Email address').fill(role === 'admin' ? 'admin@pgfy.demo' : 'sales@pgfy.demo');
   await page.getByLabel('Password', { exact: true }).fill(role === 'admin' ? 'Admin@123' : 'Sales@123');
-  await page.getByRole('button', { name: 'Sign in →', exact: true }).click();
+  await page.getByRole('button', { name: /^Sign in/, exact: false }).click();
   await page.waitForURL(`${base}/`, { timeout: 15000 });
   await page.getByRole('heading', { name: 'Dashboard', exact: true }).waitFor();
   await page.waitForLoadState('networkidle');
@@ -55,4 +55,5 @@ try {
   if (errors.length) throw new Error(errors.join('\n'));
   console.log('Browser screenshots finished; no uncaught page errors.');
 } catch (error) { console.error(error); process.exitCode = 1; } finally { await Promise.race([browser.close(), new Promise(resolve => setTimeout(resolve, 5000))]); process.exit(process.exitCode || 0); }
+
 

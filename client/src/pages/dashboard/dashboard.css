@@ -1,0 +1,29 @@
+.dashboard-content{display:grid;gap:30px}.overview-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:18px}.overview-card{padding:23px 25px;display:flex;flex-direction:column}.overview-card-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;color:#697d6f;font-size:12px;font-weight:600}.overview-icon{width:35px;height:35px;display:grid;place-items:center;border-radius:9px;background:#eaf2ec;color:#4d7a5b}.overview-icon svg{width:19px;height:19px}.overview-icon-calls{background:#edf2f3;color:#64838a}.overview-icon-followups{background:#f5f0e7;color:#a08757}.overview-number{font-size:42px;line-height:1.1;font-weight:650;letter-spacing:-1.7px;color:#254b36;margin-top:13px;font-variant-numeric:tabular-nums}.overview-primary-label{font-size:12px;font-weight:500;color:#647969;margin-top:7px}.overview-note{font-size:11px;color:#94a096;margin-top:5px;margin-bottom:20px}.overview-secondary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px 17px;border-top:1px solid #edf1eb;padding-top:15px;margin-top:auto}.overview-secondary>div{display:flex;gap:8px;justify-content:space-between;align-items:center}.overview-secondary span{font-size:11px;color:#829083}.overview-secondary strong{font-size:14px;font-weight:600;color:#405b45;font-variant-numeric:tabular-nums}.overview-secondary .overview-overdue{color:#af7951}.overview-secondary .overview-converted{color:#438561}.dashboard-section-heading{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:15px}.dashboard-section-heading h2{font-size:16px;font-weight:650;color:#314d3a}.dashboard-section-heading p{font-size:11px;color:#8b998e;margin-top:5px}.section-kicker{font-size:11px;color:#87988b;white-space:nowrap}.metric-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.performance-metric{padding:21px 24px}.metric-name{font-size:11px;font-weight:500;color:#718374}.performance-value{font-size:30px;line-height:1.2;font-weight:600;letter-spacing:-.8px;color:#31523b;margin-top:13px;font-variant-numeric:tabular-nums}.metric-track{height:5px;background:#edf2eb;border-radius:9px;overflow:hidden;margin-top:17px}.metric-track span{height:100%;display:block;border-radius:9px}.metric-explanation{font-size:10px;line-height:1.6;color:#92a095;margin-top:11px}.dashboard-footnote{font-size:11px;color:#91a093;line-height:1.7;margin-top:12px}.dashboard-content table td{font-variant-numeric:tabular-nums}
+@media(max-width:1100px){.overview-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.overview-card{padding:20px}.overview-secondary{grid-template-columns:1fr}.overview-number{font-size:36px}.overview-note{min-height:30px}.performance-metric{padding:20px}.metric-name{font-size:11px}}
+@media(max-width:760px){.overview-grid{grid-template-columns:1fr}.overview-card{padding:21px}.overview-number{font-size:36px}.overview-secondary{grid-template-columns:repeat(2,minmax(0,1fr))}.overview-note{min-height:0}.metric-card-grid{grid-template-columns:1fr}.performance-metric{padding:22px}.section-kicker{display:none}.dashboard-content{gap:25px}}
+
+.dashboard-content{grid-template-columns:minmax(0,1fr)}.dashboard-content>section{min-width:0}.overview-grid{grid-template-columns:minmax(0,1.2fr) repeat(2,minmax(0,1fr))}@media(max-width:900px){.overview-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Phones: small, dense tiles instead of stacked desktop cards. */
+@media(max-width:700px){
+.dashboard-content{gap:20px}
+.overview-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.overview-card{padding:13px 14px;border-radius:10px}
+.overview-card:first-child{grid-column:1/-1}
+.overview-card-heading{font-size:11px}
+.overview-icon{width:26px;height:26px;border-radius:7px}.overview-icon svg{width:15px;height:15px}
+.overview-number{font-size:26px;letter-spacing:-1px;margin-top:6px}
+.overview-primary-label{font-size:11px;margin-top:2px}
+.overview-note{display:none}
+.overview-secondary{grid-template-columns:1fr;gap:6px;padding-top:9px;margin-top:10px}
+.overview-card:first-child .overview-secondary{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:16px}
+.overview-secondary span{font-size:10.5px}.overview-secondary strong{font-size:13px}
+.dashboard-section-heading{margin-bottom:10px}.dashboard-section-heading h2{font-size:14px}.dashboard-section-heading p{display:none}
+.metric-card-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.performance-metric{padding:11px 11px 12px;border-radius:10px}
+.metric-name{font-size:10px;line-height:1.3;min-height:26px}
+.performance-value{font-size:19px;letter-spacing:-.5px;margin-top:4px}
+.metric-track{height:4px;margin-top:8px}
+.metric-explanation{display:none}
+.dashboard-footnote{font-size:10px}
+}

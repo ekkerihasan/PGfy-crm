@@ -54,3 +54,11 @@
 - Developer changes: none
 - Verification: Final post-lock build passed through agent 1. Screenshot script captured 15 desktop/mobile images across all seven screens and both roles; no uncaught page errors. Coordinator visually inspected login, admin dashboard and mobile sales leads. No fixtures or contract requests; only owned paths edited and no git commands run. Normal registry installation was blocked, so clean npm install remains unverified. Browser walkthrough was automated, not an independent human manual test.
 - Status: passed
+
+### UI refinement: 2026-11-05T22:06:58.9027485+05:30
+- Tool: Codex (agents 1/2/3 and coordinator)
+- Task/prompt: Professional minimal visual redesign requested from screenshot.
+- Output used: client shared styles/layout/login/components and page-specific presentation; refreshed docs/screenshots.
+- Developer changes: none
+- Verification: TypeScript and Vite build passed; real-backend browser screenshots across both roles, 15 views, no uncaught errors. Updated login selector after button label refinement. Fixed wide-table containment after visual review.
+- Status: passed

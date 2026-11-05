@@ -12,7 +12,7 @@ async function login(role) {
   await page.goto(`${base}/login`);
   await page.getByLabel('Email address').fill(role === 'admin' ? 'admin@pgfy.demo' : 'sales@pgfy.demo');
   await page.getByLabel('Password', { exact: true }).fill(role === 'admin' ? 'Admin@123' : 'Sales@123');
-  await page.getByRole('button', { name: 'Sign in →', exact: true }).click();
+  await page.getByRole('button', { name: /^Sign in/, exact: false }).click();
   await page.waitForURL(`${base}/`, { timeout: 15000 });
   await page.waitForLoadState('networkidle');
 }
@@ -95,5 +95,6 @@ try {
   assert.deepEqual(errors, []);
   console.log(`PASS: real-backend UI walkthrough; created fictional lead ${name}; two calls retained, follow-ups completed/rescheduled/scheduled, dashboard changed and three CSVs downloaded. No uncaught page errors.`);
 } catch (error) { console.error('Walkthrough failed:', error); console.error('At URL:', page.url()); await page.screenshot({ path: 'docs/screenshots/walkthrough-failure.png', fullPage: true }).catch(() => {}); process.exitCode = 1; } finally { await Promise.race([browser.close(), new Promise(resolve => setTimeout(resolve, 5000))]); process.exit(process.exitCode || 0); }
+
 
 

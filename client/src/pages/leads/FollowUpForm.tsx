@@ -12,11 +12,12 @@ export default function FollowUpForm({ leadId, followUp, onSaved, onCancel }: { 
       await api(followUp ? `/api/follow-ups/${followUp.id}` : '/api/follow-ups', { method: followUp ? 'PATCH' : 'POST', body: { ...(followUp ? { action: 'reschedule' } : { leadId }), dueAt: new Date(dueAt).toISOString(), notes: notes.trim() } }); await onSaved();
     } catch (e) { setError(errorMessage(e)); } finally { setBusy(false); }
   }
-  return <form className="space-y-4" onSubmit={submit}>
+  return <form className="lead-editor" onSubmit={submit}>
     {error && <ErrorState message={error} />}
     <Field label="Follow-up due"><Input required type="datetime-local" value={dueAt} onChange={e => setDueAt(e.target.value)} /></Field>
-    <Field label="Follow-up notes (optional)"><Textarea value={notes} onChange={e => setNotes(e.target.value)} /></Field>
-    <p className="text-xs text-slate-500">Choose today or a later date. Today is based on India Standard Time.</p>
-    <div className="flex justify-end gap-2"><Button variant="secondary" onClick={onCancel} disabled={busy}>Cancel</Button><Button type="submit" disabled={busy}>{busy ? 'Saving…' : followUp ? 'Save reschedule' : 'Schedule follow-up'}</Button></div>
+    <Field label="Follow-up notes (optional)"><Textarea placeholder="Add a reminder or the next step to discuss." value={notes} onChange={e => setNotes(e.target.value)} /></Field>
+    <p className="lead-form-help">Choose today or a later date. Today is based on India Standard Time.</p>
+    <div className="form-actions"><Button variant="secondary" onClick={onCancel} disabled={busy}>Cancel</Button><Button type="submit" disabled={busy}>{busy ? 'Saving…' : followUp ? 'Save reschedule' : 'Schedule follow-up'}</Button></div>
   </form>;
 }
+
