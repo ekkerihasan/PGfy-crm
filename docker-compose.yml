@@ -1,0 +1,20 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: pgfy-crm-db
+    environment:
+      POSTGRES_USER: pgfy
+      POSTGRES_PASSWORD: pgfy_local_dev
+      POSTGRES_DB: pgfy_crm
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgfy_crm_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pgfy -d pgfy_crm"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  pgfy_crm_data:
